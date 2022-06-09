@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="reviewStyle.css">
+    <title>A Review </title>
+</head>
+<body>
+<main>
+    <ul>
+        <img class="img" th:src="${reviewModel.imgUrl}" alt="picture uploaded">
+        <p th:text="${reviewModel.artist}"></p>
+        <p th:text="${reviewModel.title}"></p>
+        <p th:text="${reviewModel.content}"></p>
+        <p th:text="${reviewModel.description}"></p>
+
+    </ul>
+</main>
+<footer>
+    <small>&copy Hailey Fate WCCI 2022</small>
+</footer>
+</body>
+</html>

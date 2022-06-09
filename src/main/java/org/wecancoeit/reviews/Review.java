@@ -7,6 +7,8 @@ public class Review {
     private String imgUrl;
     private String reviewCategory;
     private String content;
+    private String description;
+    private String artist;
 
     public Long getId() {
         return id;
@@ -28,11 +30,21 @@ public class Review {
         return content;
     }
 
-    public Review(Long id, String title, String imgUrl, String reviewCategory, String content) {
+    public String getDescription() {
+        return description;
+    }
+
+    public String getArtist() {
+        return artist;
+    }
+
+    public Review(Long id, String title, String imgUrl, String reviewCategory, String content, String description, String artist) {
         this.id = id;
         this.title = title;
         this.imgUrl = imgUrl;
         this.reviewCategory = reviewCategory;
         this.content = content;
+        this.description = description;
+        this.artist = artist;
     }
 }
