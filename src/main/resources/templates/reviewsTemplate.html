@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>A List of Music Reviews</title>
+    <link rel="stylesheet" href="reviewsStyle.css">
+</head>
+<body>
+<header>
+    <h1>A List of Music Reviews</h1>
+</header>
+<main>
+    <ul>
+        <button th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}"  th:text="${review.reviewCategory}"></a></button>
+    </ul>
+</main>
+<footer>
+    <small>&COPY Hailey Fate WCCI 2022</small>
+</footer>
+</body>
+</html>
